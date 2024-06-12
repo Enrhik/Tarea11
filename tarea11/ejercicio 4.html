@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Multiplos de 5 entre 500 y 1000</h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                function multiplos5(){
+                    var suma = 0;
+                    var numero = 500;
+
+                    do {
+                        if (numero % 5 == 0){
+                            suma += numero;
+                        }
+                        numero++;
+                    } while (numero <= 1000);
+                    document.write("La suma de todos los múltiplos de 5 entre 500 y 1000 es:" + suma);
+                }
+                multiplos5();
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Calcular el factorial de un Número entero</h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                function calcularFactorial(){
+                    var numero;
+                    var factorial = 1;
+                    numero = parseInt(prompt("Ingrese un número entero:"));
+                    
+                    var contador = 1;
+                    do {
+                        factorial *= contador;
+                        contador++;
+                    } while (contador <= numero);
+                    document.write("El factorial de "+ numero +" es:" + factorial);
+                }
+                calcularFactorial();
+            </script>
+        </div>
+    </div>
+</body>
+</html>

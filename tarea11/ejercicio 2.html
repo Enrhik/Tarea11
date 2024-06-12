@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Calcular la Edad</h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                function calcularEdadPromedio(){
+                    var total = parseInt(prompt("Ingrese el número de alumnos:"));
+                    var Edades = 0;
+                    var contador = 0;
+                    
+                    do {
+                        var edad = parseInt(prompt("Ingrese la edad del alumno:"));
+                        Edades += edad;
+                        contador++;
+                    } while (contador < total);
+                    var edadPromedio = Edades / total;
+                    document.write("La edad promedio es:" + edadPromedio);
+                }
+                calcularEdadPromedio();
+            </script>
+        </div>
+    </div>
+</body>
+</html>
